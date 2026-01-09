@@ -135,3 +135,56 @@ Implemented using Liferay, an open-source portal product that can be set up with
 -	Creating bespoke portlets. For example, an “Ask Exec Team” portlet was created where users could submit a question to be answered by an executive team member. This involved creating the portlet “view” and the database entities, implementing Lucene indexers, and setting up workflows based on user roles.
 -	Carrying out deployments, patching and other server tasks.
 
+## Thomson Reuters - Java Developer (Sept 2014 – March 2016)
+
+*(based in the Royal Courts of Justice), 11 Rolls Buildings, London, EC4A 1NL*
+
+Joined the team to work on implementing a new court management (CMS) and electronic filing (EFile) system in the Royal Courts of Justice. These are built upon products that are still under development in the US.
+
+- With CMS’s first release, I was given several bugs to fix so that I could understand how the system works. Having successfully resolved many issues, I was paired with another developer to implement the EFile system. This involved modifying the configuration and making code changes to a partially built generic version of the project to conform to the business requirements of the Royal Courts of Justice. This includes:
+- Setting up the configuration so the application would work against an Oracle database rather than MSSQL.
+- Configuring and implementing code changes for the different pages and web-flow.
+- Configuring the communication between the CMS and EFile systems and implementing the necessary code changes.
+- Investigating, documenting and developing features specific to the RCJ:
+  + Implementing part of the payment system to allow customers to provide an account number.
+  + Allowing case parties to be added to a filing for a case.
+  + Allowing law firms to be associated with multiple addresses and the data to be synchronised between the Efile and CMS systems.
+- Taking part as one of the tech leads for a CMS/Efile release. I was responsible for preparing database scripts, including changes to the core product. This was more complex than previous releases because Liquibase had been introduced. Some of the dependent projects had also been merged, so additional changes to the database were required.
+- Fixing bugs from the ongoing development in the US. Examples:
+  + Fixing a customised spring BeanWrapper, which was incorrectly binding values from specific date fields to the page form.
+  + Fixing Hibernate queries and stored procedures (both Oracle and SQL Server).
+- Liaising and supporting the US team to resolve issues with the code and bugs.
+ 
+Technologies: Free marker templates, Custom tags, Spring MVC, Hibernate, JavaScript, GIT, JIRA, Stash, Jenkins, SQL Server, Oracle, Liquibase
+
+## BNP Paribas - Java Developer (Mar 2013 – Jun 2014)
+
+*10 Harewood Ave, London, NW16AA*
+
+Took over as the primary developer for Headcount, an existing web application used to monitor all staff within the fixed-income department. Work was delivered to time and budget and included:
+
+- Optimising Ajax queries to prevent out-of-memory errors from occurring.
+- Implementing the JQgrid plugin to replace existing tables on the page.
+- Implementing quartz scheduler to update graduate records.
+- Setting up feeds between other databases.
+- Adding new pages, changes to server-side code, changes/additions to database.
+- A release to include budget data into the application. This involved setting up a file-upload capability, excel file parsing with POI and a new webpage with JQgrid to display the data.
+- A refresh of the data. An extract of the existing data into a spreadsheet was passed to the business. We agreed on the format of the data files to be returned and developed a process to create an SQL update script to upload the data and worked with the business to fix issues with the files, such as not being able to determine the data references or missing compulsory fields.
+- Bug fixes.
+- Liaising with the business to get requirements.
+
+Technologies: Oracle, WAS 6.1, Java 1.5, POI, Quartz, JUnit, Spring MVC
+
+## Waitrose - Java Developer (Dec 2011 – Sept 2012)
+
+*Bracknell, UK*
+
+Tasked with performing change requests and fixing defects on the main website and back-end integration layer. These systems were built using various technologies, including WebSphere Commerce 6, Struts and Ibatis. Fixing defects by investigating the front-end JSPs, controller commands and database tables.
+
+## Johnson Matthey Plc - Laboratory Technical Officer (February 2010 – December 2010)
+
+*Sonning Common, Reading, UK*
+
+## Natural Resource Management Ltd - Laboratory Analyst (March 2004 – Sept 2004 & Dec 2005 – Feb 2010)
+
+*Bracknell, UK*
