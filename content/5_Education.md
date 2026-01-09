@@ -1,16 +1,3 @@
----
-title: LAWRENCE REYNOLDS
-subtitle: Software Developer | Java Specialist (15 years) | [l-reynolds.dev](https://l-reynolds.dev)
-date: (Available immediately)
----
-
-# Personal Details
-Experience: 
-
-# Profile
-
-# Employment
-
 # Education
 ## FDM and Brighton University - Postgraduate Certificate in Applied Computing (2011 – 2012)
 Created an application to aid music students in learning the compositional technique of counterpoint. The algorithm finds solutions to how melodic lines can be written alongside one another according to strict rules. The application consists of:
@@ -27,6 +14,3 @@ Subjects studied: Optics, Fourier Optics, Laser Physics, Light Interaction with 
 ## Sheffield Hallam University - BSc (Hons) Physics (2.2) (2000 – 2003)
 Subjects studied: Mathematics, Material Science, Thermodynamics & Statistical Physics, Electrodynamics, Optics, Solid State Physics, Nuclear & Particle Physics, and Electronics.
 
-
-# Interests / Activities
-Recently, I took up tennis to meet new people locally since the start of COVID-19. I am interested in learning about and studying music theory and how compositions are made. 
