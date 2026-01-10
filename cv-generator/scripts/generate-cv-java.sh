@@ -1,8 +1,8 @@
 #!/bin/bash
 
 files="./content/1_header.md \
-       ./content/2_technical-skills.md \
-       ./content/3_profile.md \
+       ./content/2_profile.md \
+       ./content/3_technical-skills.md \
        ./content/4.1_employment_java2.md \
        ./content/4.2_employment_aem.md \
        ./content/4.3_employment_java1.md \
