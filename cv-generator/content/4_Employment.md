@@ -141,7 +141,7 @@ Implemented using Liferay, an open-source portal product that can be set up with
 -	Creating bespoke portlets. For example, an “Ask Exec Team” portlet was created where users could submit a question to be answered by an executive team member. This involved creating the portlet “view” and the database entities, implementing Lucene indexers, and setting up workflows based on user roles.
 -	Carrying out deployments, patching and other server tasks.
 
-## Thomson Reuters - Java Developer (Sep 2014 – March 2016)
+## Thomson Reuters - Java Developer (Sep 2014 – Mar 2016)
 
 *London, United Kingdom*
 

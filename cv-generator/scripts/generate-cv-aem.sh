@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files="./content/1_header.md \
+files="./content/1_header-custom/1_header-aem.md \
        ./content/2_technical-skills.md \
        ./content/3_profile.md \
        ./content/4_employment.md \
