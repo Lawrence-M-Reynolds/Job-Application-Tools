@@ -3,7 +3,10 @@
 files="./content/1_header.md \
        ./content/2_technical-skills.md \
        ./content/3_profile.md \
-       ./content/4_employment.md \
+       ./content/4.1_employment_java2.md \
+       ./content/4.2_employment_aem.md \
+       ./content/4.3_employment_java1.md \
+       ./content/4.4_employment_chemistry.md \
        ./content/5_education.md \
        ./content/6_interests-and-activities.md"
 

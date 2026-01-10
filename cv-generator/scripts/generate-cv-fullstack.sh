@@ -1,9 +1,12 @@
 #!/bin/bash
 
-files="./content/1_header-custom/1_header-full-stack.md \
+files="./content/full-stack-fragments/1_header.md \
        ./content/2_technical-skills.md \
-       ./content/3_profile.md \
-       ./content/4_employment.md \
+       ./content/full-stack-fragments/3_profile.md \
+       ./content/4.1_employment_java2.md \
+       ./content/full-stack-fragments/4.2_employment_aem.md \
+       ./content/full-stack-fragments/4.3_employment_java1.md \
+       ./content/4.4_employment_chemistry.md \
        ./content/5_education.md \
        ./content/6_interests-and-activities.md"
 
