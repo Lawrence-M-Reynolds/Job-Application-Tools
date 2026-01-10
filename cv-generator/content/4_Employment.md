@@ -1,7 +1,7 @@
 
 # Employment
 ## Open GI – Lead Software Engineer (Sep 2024 – Aug 2025)
-*Buckholt Drive, Warndon, Worcester, WR4 9SR, United Kingdom*
+*Worcester, United Kingdom*
 
 I joined as one of the Lead Java developers of a spring project that processes payments for insurance products. The task was to add the functionality to create/update "pay-by-links". This allowed payment links to be sent to customers to pay via the payment provider’s website. Tasks undertaken:
 
@@ -12,7 +12,7 @@ I joined as one of the Lead Java developers of a spring project that processes p
 
 ## IG Index – Senior Software Developer (Apr 2022 – May 2024)
 
-*Cannon Bridge House, 25 Dowgate Hill, London, EC4R 2YA, United Kingdom*
+*London, United Kingdom*
 
 I took the role of one of the lead AEM developers for the main IG.com website.
 
@@ -36,7 +36,7 @@ I took the role of one of the lead AEM developers for the main IG.com website.
 
 ## Digitalum - AEM Software Crafter (Feb 2020 – Apr 2022)
 
-*3560 Lummen, Klaverbladstraat 7A bus 5, Belgium*
+*Lummen, Belgium*
 
 **Bridgestone (Sep 2021 - Apr 2022)**
 
@@ -76,7 +76,7 @@ Enhance and optimise the existing retail site following the development of anoth
 
 ## ecx.io - Senior AEM Developer (Oct 2018 – Jan 2020)
 
-*2 Arlington Sq, Downshire Way, Bracknell RG12 1WA, United Kingdom*
+*Bracknell, United Kingdom*
 
 Worked as a senior developer and was given a lead role on a project with a large team. The project was to implement a website in AEM for NSK. Having rapidly picked up speed with the project, I took significant responsibility for mentoring less experienced developers and carrying out code reviews. Tasks undertaken:
 
@@ -91,7 +91,7 @@ Worked as a senior developer and was given a lead role on a project with a large
 
 ## Black Sun Plc - Java Developer (Apr 2016 – Aug 2018)
 
-*Fulham Palace, Bishop’s Avenue, London SW6 6EA*
+*London, United Kingdom*
 
 Worked on several projects. All of these included the following responsibilities:
 
@@ -143,7 +143,7 @@ Implemented using Liferay, an open-source portal product that can be set up with
 
 ## Thomson Reuters - Java Developer (Sep 2014 – March 2016)
 
-*(based in the Royal Courts of Justice), 11 Rolls Buildings, London, EC4A 1NL*
+*London, United Kingdom*
 
 Joined the team to work on implementing a new court management (CMS) and electronic filing (EFile) system in the Royal Courts of Justice. These are built upon products that are still under development in the US.
 
@@ -165,7 +165,7 @@ Technologies: Free marker templates, Custom tags, Spring MVC, Hibernate, JavaScr
 
 ## BNP Paribas - Java Developer (Mar 2013 – Jun 2014)
 
-*10 Harewood Ave, London, NW16AA*
+*London, United Kingdom*
 
 Took over as the primary developer for Headcount, an existing web application used to monitor all staff within the fixed-income department. Work was delivered to time and budget and included:
 
@@ -189,7 +189,7 @@ Tasked with performing change requests and fixing defects on the main website an
 
 ## Johnson Matthey Plc - Laboratory Technical Officer (Feb 2010 – Dec 2010)
 
-*Sonning Common, Reading, UK*
+*Reading, UK*
 
 ## Natural Resource Management Ltd - Laboratory Analyst (Mar 2004 – Sep 2004 & Dec 2005 – Feb 2010)
 
