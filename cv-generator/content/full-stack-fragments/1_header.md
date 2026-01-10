@@ -4,7 +4,7 @@ LAWRENCE REYNOLDS
 
 ::: {custom-style="Subtitle"}
 Java Fullstack Developer (15 years)\
-{EMAIL} | {PHONE NUMBER}\
+{EMAIL} | {PHONE NUMBER} | Bracknell, UK \
 [l-reynolds.dev](https://l-reynolds.dev) | [github.com/Lawrence-M-Reynolds](https://github.com/Lawrence-M-Reynolds)
 :::
 

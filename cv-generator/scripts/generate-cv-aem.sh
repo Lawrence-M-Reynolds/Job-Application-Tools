@@ -6,7 +6,6 @@ files="./content/aem-fragments/1_header.md \
        ./content/4.1_employment_java2.md \
        ./content/aem-fragments/4.2_employment_aem.md \
        ./content/full-stack-fragments/4.3_employment_java1.md \
-       ./content/4.4_employment_chemistry.md \
        ./content/5_education.md \
        ./content/6_interests-and-activities.md"
 
