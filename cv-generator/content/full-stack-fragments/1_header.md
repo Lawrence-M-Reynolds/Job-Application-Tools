@@ -1,5 +1,5 @@
 ::: {custom-style="Title"}
-LAWRENCE REYNOLDS
+Lawrence Reynolds
 :::
 
 ::: {custom-style="Subtitle"}
