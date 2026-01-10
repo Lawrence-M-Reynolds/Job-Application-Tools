@@ -10,7 +10,7 @@ docker run --rm \
        ./content/4_Employment.md \
        ./content/5_Education.md \
        ./content/6_Interests-and-activities.md \
-       -o ./output/Lawrence_Reynolds_CV_$(date -u +"%d%m%Y").docx \
+       -o ./output/AEM_Developer/Lawrence_Reynolds_CV_AEM_Developer_$(date +%F).docx \
        --data-dir=/data/templates \
        --reference-doc=/data/templates/custom-reference.docx
 
@@ -24,4 +24,4 @@ docker run --rm \
        ./content/4_Employment.md \
        ./content/5_Education.md \
        ./content/6_Interests-and-activities.md \
-       -o ./output/Lawrence_Reynolds_CV_$(date -u +"%d%m%Y").md 
+       -o ./output/AEM_Developer/Lawrence_Reynolds_CV_AEM_Developer_$(date +%F).md
