@@ -15,7 +15,7 @@ docker run --rm \
        pandoc/core \
        $files \
        -o ./output/AEM_Developer/Lawrence_Reynolds_CV_AEM_Developer_$(date +%F).docx \
-       --data-dir=/data/templates \
+       --lua-filter=/data/scripts/replaceSensitiveInfo.lua \
        --reference-doc=/data/templates/custom-reference.docx
 
 docker run --rm \
@@ -23,4 +23,5 @@ docker run --rm \
        --user $(id -u):$(id -g) \
        pandoc/core \
        $files \
+       --lua-filter=/data/scripts/replaceSensitiveInfo.lua \
        -o ./output/AEM_Developer/Lawrence_Reynolds_CV_AEM_Developer_$(date +%F).md
