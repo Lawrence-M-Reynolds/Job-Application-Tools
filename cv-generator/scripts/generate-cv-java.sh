@@ -15,7 +15,7 @@ docker run --rm \
        pandoc/core \
        $files \
        -o ./output/Java_Developer/Lawrence_Reynolds_CV_Java_Developer_$(date +%F).docx \
-       --lua-filter=/data/scripts/replaceSensitiveInfo.lua \
+       --lua-filter=/data/scripts/replaceSensitiveInfo-custom.lua \
        --reference-doc=/data/templates/custom-reference.docx
 
 docker run --rm \
@@ -23,5 +23,5 @@ docker run --rm \
        --user $(id -u):$(id -g) \
        pandoc/core \
        $files \
-       --lua-filter=/data/scripts/replaceSensitiveInfo.lua \
+       --lua-filter=/data/scripts/replaceSensitiveInfo-custom.lua \
        -o ./output/Java_Developer/Lawrence_Reynolds_CV_Java_Developer_$(date +%F).md

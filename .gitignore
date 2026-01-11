@@ -1,2 +1,2 @@
 output/
-cv-generator/scripts/replaceSensitiveInfo.lua
+cv-generator/scripts/replaceSensitiveInfo-custom.lua
