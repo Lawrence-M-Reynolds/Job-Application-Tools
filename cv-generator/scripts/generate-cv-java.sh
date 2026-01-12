@@ -16,7 +16,7 @@ docker run --rm \
        $files \
        -o ./output/Java_Developer/Lawrence_Reynolds_CV_Java_Developer_$(date +%F).docx \
        --lua-filter=/data/scripts/replaceSensitiveInfo-custom.lua \
-       --reference-doc=/data/templates/custom-reference.docx
+       --reference-doc=/data/templates/template-custom.docx
 
 docker run --rm \
        --volume "$(pwd):/data" \
