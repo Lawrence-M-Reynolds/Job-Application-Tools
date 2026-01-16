@@ -1,5 +1,11 @@
 #!/bin/bash
 
+cvName=$1
+referenceDoc=$2
+luaFilter=$3
+
+cvDirName=AEM_Developer
+
 files="./content/aem-fragments/1_header.md \
        ./content/aem-fragments/2_profile.md \
        ./content/3_technical-skills.md \
@@ -14,14 +20,14 @@ docker run --rm \
        --user $(id -u):$(id -g) \
        pandoc/core \
        $files \
-       -o ./output/AEM_Developer/Lawrence_Reynolds_CV_AEM_Developer_$(date +%F).docx \
-       --lua-filter=/data/scripts/replaceSensitiveInfo-custom.lua \
-       --reference-doc=/data/templates/template-custom.docx
+       -o ./output/$cvDirName/$cvName.docx \
+       --lua-filter=$luaFilter \
+       --reference-doc=$referenceDoc
 
 docker run --rm \
        --volume "$(pwd):/data" \
        --user $(id -u):$(id -g) \
        pandoc/core \
        $files \
-       --lua-filter=/data/scripts/replaceSensitiveInfo-custom.lua \
-       -o ./output/AEM_Developer/Lawrence_Reynolds_CV_AEM_Developer_$(date +%F).md
+       --lua-filter=$luaFilter \
+       -o ./output/$cvDirName/$cvName.md
