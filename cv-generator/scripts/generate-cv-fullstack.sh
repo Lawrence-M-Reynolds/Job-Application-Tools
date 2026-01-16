@@ -1,8 +1,9 @@
 #!/bin/bash
 
 cvName=$1
-referenceDoc=$2
-luaFilter=$3
+secureConfigDir=$2
+luaFilterFileName=$3
+referenceDocFileName=$4
 
 cvDirName=FullStack_Developer
 
@@ -17,17 +18,19 @@ files="./content/full-stack-fragments/1_header.md \
 
 docker run --rm \
        --volume "$(pwd):/data" \
+       --volume $(pwd)/$secureConfigDir:/etc/cv-generator-config \
        --user $(id -u):$(id -g) \
        pandoc/core \
        $files \
        -o ./output/$cvDirName/$cvName.docx \
-       --lua-filter=$luaFilter \
-       --reference-doc=$referenceDoc
+       --lua-filter=/etc/cv-generator-config/$luaFilterFileName \
+       --reference-doc=/etc/cv-generator-config/$referenceDocFileName
 
 docker run --rm \
        --volume "$(pwd):/data" \
+       --volume $(pwd)/$secureConfigDir:/etc/cv-generator-config \
        --user $(id -u):$(id -g) \
        pandoc/core \
        $files \
-       --lua-filter=$luaFilter \
+       --lua-filter=/etc/cv-generator-config/$luaFilterFileName \
        -o ./output/$cvDirName/$cvName.md
