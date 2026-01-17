@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cvNamePrefix=76686Lawrence_Reynolds
+cvNamePrefix=Lawrence_Reynolds
 secureConfigDir=../Job-Application-Tools-Secure/cv-generator-config
 luaFilterFileName=replaceSensitiveInfo-custom.lua
 referenceDocFileName=template-custom.docx
