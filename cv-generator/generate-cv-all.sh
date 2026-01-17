@@ -1,10 +1,10 @@
 #!/bin/bash
 
-cvName=Lawrence_Reynolds_CV_Java_Developer_$(date +%F)
+cvNamePrefix=Lawrence_Reynolds
 secureConfigDir=../Job-Application-Tools-Secure/cv-generator-config
 luaFilterFileName=replaceSensitiveInfo-custom.lua
 referenceDocFileName=template-custom.docx
 
-sh ./scripts/generate-cv-java.sh $cvName $secureConfigDir $luaFilterFileName $referenceDocFileName
-sh ./scripts/generate-cv-aem.sh $cvName $secureConfigDir $luaFilterFileName $referenceDocFileName
-sh ./scripts/generate-cv-fullstack.sh $cvName $secureConfigDir $luaFilterFileName $referenceDocFileName
+sh ./scripts/generate-cv-java.sh $cvNamePrefix $secureConfigDir $luaFilterFileName $referenceDocFileName
+sh ./scripts/generate-cv-aem.sh $cvNamePrefix $secureConfigDir $luaFilterFileName $referenceDocFileName
+sh ./scripts/generate-cv-fullstack.sh $cvNamePrefix $secureConfigDir $luaFilterFileName $referenceDocFileName

@@ -1,11 +1,11 @@
 #!/bin/bash
 
-cvName=$1
+cvNamePrefix=$1
 secureConfigDir=$2
 luaFilterFileName=$3
 referenceDocFileName=$4
 
-cvDirName=Java_Developer
+cvTypeName=Java_Developer
 
 files="./content/1_header.md \
        ./content/2_profile.md \
@@ -22,7 +22,7 @@ docker run --rm \
        --user $(id -u):$(id -g) \
        pandoc/core \
        $files \
-       -o ./output/$cvDirName/$cvName.docx \
+       -o ./output/$cvTypeName/"$cvNamePrefix"_"$cvTypeName"_$(date +%F).docx \
        --lua-filter=/etc/cv-generator-config/$luaFilterFileName \
        --reference-doc=/etc/cv-generator-config/$referenceDocFileName
 
@@ -33,5 +33,5 @@ docker run --rm \
        pandoc/core \
        $files \
        --lua-filter=/etc/cv-generator-config/$luaFilterFileName \
-       -o ./output/$cvDirName/$cvName.md
+       -o ./output/$cvTypeName/"$cvNamePrefix"_"$cvTypeName"_$(date +%F).md
        
