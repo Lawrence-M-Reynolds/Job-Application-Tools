@@ -1,20 +1,12 @@
 #!/bin/bash
 
-cvNamePrefix=$1
-secureConfigDir=$2
-luaFilterFileName=$3
-referenceDocFileName=$4
+secureConfigDir=$1
+luaFilterFileName=$2
+referenceDocFileName=$3
 
-cvTypeName=Java_Developer
-
-files="./content/1_header.md \
-       ./content/2_profile.md \
-       ./content/3_technical-skills.md \
-       ./content/4.1_employment_java2.md \
-       ./content/4.2_employment_aem.md \
-       ./content/4.3_employment_java1.md \
-       ./content/5_education.md \
-       ./content/6_interests-and-activities.md"
+cvTypeName=$4
+cvNamePrefix=$5
+files=$6
 
 docker run --rm \
        --volume "$(pwd):/data" \
