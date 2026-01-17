@@ -10,7 +10,7 @@ files=$6
 
 docker run --rm \
        --volume "$(pwd):/data" \
-       --volume $(pwd)/$secureConfigDir:/etc/cv-generator-config \
+       --volume $(pwd)/$secureConfigDir:/etc/cv-generator-config:ro \
        --user $(id -u):$(id -g) \
        pandoc/core \
        $files \
@@ -20,7 +20,7 @@ docker run --rm \
 
 docker run --rm \
        --volume "$(pwd):/data" \
-       --volume $(pwd)/$secureConfigDir:/etc/cv-generator-config \
+       --volume $(pwd)/$secureConfigDir:/etc/cv-generator-config:ro \
        --user $(id -u):$(id -g) \
        pandoc/core \
        $files \
