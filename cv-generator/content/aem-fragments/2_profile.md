@@ -1,7 +1,4 @@
+<!-- AEM Developer profile. -->
 # Profile
-<!-- Custom AEM Profile -->
-While developing algorithms in Labview and C during my University degree projects, I acquired a keen interest in programming. Having worked as a chemical analyst for 5-6 years, I took the opportunity to change my career and become a programmer. After an initial evaluation, I was selected for the FDM Academy in the City of London to pursue this interest and train as a Java Developer. 
 
-Upon completing the initial training phase, I gained experience working at Waitrose, BNP Paribas, and Thomson Reuters. Primarily focusing on web applications, I built up my skills and technical knowledge in developing with server-side Java, client-side JavaScript, and back-end databases.
-
-I was one of a small group of trainees at the academy selected to join a course programme in “Applied Computing” at the University of Sussex. Upon completion, I obtained a Postgraduate Certificate with distinction.
+Senior AEM Developer with over 15 years of software engineering experience. Expert in architecting and delivering high-traffic content platforms using Adobe Experience Manager. Proven track record of leading complex platform migrations (5.6 to 6.5) and upskilling teams less experienced in AEM. Deep understanding of the technology stack, capable of diagnosing and resolving complex OSGi and Sling framework issues. Passionate about code quality, and mentoring both backend and frontend team members on AEM best practices.
