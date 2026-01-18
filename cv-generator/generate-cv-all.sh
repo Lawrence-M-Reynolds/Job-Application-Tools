@@ -26,7 +26,7 @@ files="./content/full-stack-fragments/1_header.md \
        ./content/full-stack-fragments/2_profile.md \
        ./content/3_technical-skills.md \
        ./content/4.1_employment_java2.md \
-       ./content/full-stack-fragments/4.2_employment_aem.md \
+       ./content/4.2_employment_aem.md \
        ./content/full-stack-fragments/4.3_employment_java1.md \
        ./content/5_education.md \
        ./content/6_interests-and-activities.md"
