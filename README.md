@@ -7,6 +7,16 @@ date: January 2026
 # cv-source
 
 ## instructions
+Clone project with the submodule using:
+````
+git clone --recurse-submodules
+````
+
+If you forgot to do that you can pull in the module using:
+````
+cd Job-Application-Tools-Secure
+git submodule update --init
+````
 
 ### Basic command
 **docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]**
