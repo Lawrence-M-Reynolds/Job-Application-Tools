@@ -1,9 +1,24 @@
 #!/bin/bash
 
 cvNamePrefix=Lawrence_Reynolds
-secureConfigDir=../Job-Application-Tools-Secure/cv-generator-config
 luaFilterFileName=replaceSensitiveInfo-custom.lua
 referenceDocFileName=template-custom.docx
+
+
+# Setting secure configuration location.
+secureConfigDir="../Job-Application-Tools-Secure-Example/cv-generator-config"
+
+# Checking for a local override file properties file.
+if [ -f "./config.local.sh" ]; then
+    source "./config.local.sh"
+    echo "Notice: Loaded local configuration override."
+else
+    echo "Notice: Using example configuration."
+fi
+
+echo "The config directory is set to: $secureConfigDir"
+#secureConfigDir=../Job-Application-Tools-Secure/cv-generator-config
+
 
 #### Java Developer CV 
 cvTypeName=Java_Developer

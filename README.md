@@ -1,56 +1,61 @@
----
-title: Pandoc CV file conversion.
-subtitle: (Subtitle)
-date: January 2026
----
+# CV Generator
+This project is used to generate multiple versions of a CV. It allows:
 
-# cv-source
+- the common elements to be populated from the same template fragments, rather than having to repeat the same content.
+- the styles, which are applied via template word file, from the content.
+- the version to be managed via git.
 
-## instructions
-Clone project with the submodule using:
+Unfortunately it's not smart enough to know when to insert page breaks, at the beginning/end of paragraphs for example. So you should go through the generated files afterwards and insert the page breaks where appropriate.
+
+## Project Structure
+
+You can create/modify the content fragments stored in the following directory:
+
+`cv-generator/content/`
+
+You can then define how the content fragments are used to create the different versions of CV here:
+
+`cv-generator/generate-cv-all.sh`
+
+There is also a submodule which is described in more detail further down.
+
+## Running the Application
+
+Currently this project only has bash scripts so this can only run on a linux environment with docker.
+
+After cloning the project you can generate the CVs by running:
+
+````bash
+cd cv-generator/
+./generate-cv-all.sh 
 ````
-git clone --recurse-submodules
-````
 
-If you forgot to do that you can pull in the module using:
-````
-cd Job-Application-Tools-Secure
-git submodule update --init
-````
+This will output the file into the following directory:
 
-### Basic command
-**docker container run [OPTIONS] IMAGE [COMMAND] [ARG...]**
-docker run --rm \
-       --volume "$(pwd):/data" \
-       --user $(id -u):$(id -g) \
-       pandoc/core README.md -o outfile.docx
+`cv-generator/output`
 
+### Secure SubModule
+There is a private git submodule that stores a word document template to apply styles to the generated CVs as well as a lua script to inject sensitive data. Because this isn't accessible publicly, by default the project is configured to pick up example files from here:
 
-### Use reference doc
-https://pandoc.org/MANUAL.html
+`Job-Application-Tools-Secure-Example`
 
-Use **--reference-doc=FILE|URL**
-Create a **custom-reference.docx** first:
-````
-pandoc -o custom-reference.docx --print-default-data-file reference.docx
-````
-Update the sytles in this, but don't add/modify content.
+To configure your own lua scripts and template file you should:
 
+1) Duplicate the `Job-Application-Tools-Secure-Example` directory with the name `Job-Application-Tools-Secure`. You can then configure the files in there as required.
+2) Duplicate the `cv-generator/config.local.sh.example` to `cv-generator/config.local.sh`.
 
-docker run --rm -v "$(pwd):/data" --user $(id -u):$(id -g) pandoc/core \
-  -o /data/templates/custom-reference.docx --print-default-data-file reference.docx
+When running the scripts you should now see the following in the output:
 
-#### Generate
+> Notice: Loaded local configuration override.
 
-docker run --rm \
-       --volume "$(pwd):/data" \
-       --user $(id -u):$(id -g) \
-       pandoc/core README.md -o outfile.docx \
-       --data-dir=/data/templates \
-       --reference-doc=/data/templates/custom-reference.docx
+*(You can also use the submodule to store final generated CV versions along with other job application related files.)*
 
+#### Style Template
+To modify the styles in the generated CVs you can modify them in this file. It's a bit awkward but if you open the files in the Microsoft word you need to modify the *styles* associated with each title/paragragh/etc. Modifying the title/paragraph elements directly won't take any effect.
 
-docker run --rm -v "$(pwd):/data" --user $(id -u):$(id -g) pandoc/core \
-  --print-default-data-file reference.docx > /data/templates/reference.docx
+#### Sensitive Information
+Sensitive information, such as email addresses and phone numbers, are stored and injected via a script - [see example](Job-Application-Tools-Secure-Example/cv-generator-config/replaceSensitiveInfo-custom.lua). 
 
-**Creating CV**
+An example of where these properties are injected is in the header files - in the header files for example ([1_header.md](cv-generator/content/1_header.md))
+
+So you can update the properties, or add more, in the lua script.
