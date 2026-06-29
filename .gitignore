@@ -1,2 +1,4 @@
 output/
 */config.local.sh
+
+.DS_Store
