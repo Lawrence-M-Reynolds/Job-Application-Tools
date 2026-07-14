@@ -9,5 +9,5 @@ Senior Java Developer (15 years)\
 :::
 
 ::: {custom-style="date"}
-Availability: Immediate
+Availability: One Month
 :::
