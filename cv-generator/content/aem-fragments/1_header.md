@@ -9,5 +9,5 @@ Senior AEM Developer \
 :::
 
 ::: {custom-style="date"}
-Availability: Immediate
+Availability: One Month
 :::
